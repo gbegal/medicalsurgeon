@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Route App</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/demo.css">
+        <!-- Pushy CSS -->
+<link rel="stylesheet" href="css/pushy.css">
+<style>
+.parent 
+{
+    display: table;
+    float: none;
+    min-height: 100%;
+    width: 100%;
+}
+.child {
+	display: table-cell;
+	vertical-align: middle;
+}
+.wrap {
+    position: relative;
+}
+.panel {
+    position: fixed;
+    left: -15.625em; /*left or right and the width of your navigation panel*/
+    width: 15.625em; /*should match the above value*/
+}
+</style>
+</head>
+   <body class="cbp-spmenu-push">
+   
+   <script id="login-tpl" type="text/x-handlebars-template">   
+     <div class="container">
+	  <!-- Pushy Menu -->
+        <nav class="pushy pushy-left">
+            <ul class="menu-ul">
+     			<li><a class="item1">Item 1</a></li>
+                <li><a class="item2">Item 2</a></li>
+                <li><a class="item3">Item 3</a></li>
+                <li><a class="item4">Item 4</a></li>
+                <li><a class="item5">Item 5</a></li>
+                <li><a class="item6">Item 6</a></li>
+            </ul>
+        </nav>
+
+        <!-- Site Overlay -->
+        <div class="site-overlay"></div>
+
+        <!-- Your Content -->
+        <div id="container">
+            <!-- Menu Button -->
+            <!--div class="menu-btn">&#9776; Menu</div-->
+			<div class="menu-btn">&#9776;</div>
+			
+        </div>
+	  <img src="images/item1.jpg" id="first_img"/>
+     </div>
+   </script>
+   
+    <script src="phonegap.js"></script>
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/ajax.js"></script>
+    <script src="js/functions.js"></script>
+	<script src="js/handlebars.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrapValidator.min.js"></script>  
+	<script src="js/HomeView.js"></script>
+	<script src="js/RouteView.js"></script>
+	<script src="js/main.js"></script>
+    <script src="js/storage/ls-store.js"></script> 
+	<script type="text/javascript">	
+	 $(function(){
+	   $.support.cors = true;
+	   app.initialize();		   
+	 });
+ 	</script>  
+  </body>
+</html>
